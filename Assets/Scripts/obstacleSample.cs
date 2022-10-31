@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Obstacle : MonoBehaviour
+public class obstacleSample : MonoBehaviour
 {
     //Boulder
     //Energy Screen

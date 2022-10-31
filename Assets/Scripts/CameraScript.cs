@@ -25,18 +25,12 @@ public class CameraScript : MonoBehaviour
     void Update()
     {
 
-        if (Delay > 0)
-        {
-            Delay -= Time.deltaTime;
-        }
-        else
-        {
-            transform.position = new Vector3(
-                    transform.position.x + (currentMoveSpeed * Time.deltaTime),
-                    transform.position.y,
-                    transform.position.z
-                );
-        }
+        
+        transform.position = new Vector3(
+                transform.position.x + (currentMoveSpeed * Time.deltaTime),
+                transform.position.y,
+                transform.position.z
+            );
     }
 
     public void SetPosition(Vector2 newPos)

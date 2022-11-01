@@ -6,7 +6,7 @@ public class PlatformGenerator : MonoBehaviour
 {
     [Header("Camera")]
     public int WindowSize;
-    public CameraScript cameraScript;
+    public cameraScript cameraScript;
 
     private Vector2 startCameraPos;
     private Vector2 currentCameraPos;
@@ -41,6 +41,7 @@ public class PlatformGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         startCameraPos = cameraScript.gameObject.transform.position;
         currentCameraPos = startCameraPos;
 

@@ -5025,7 +5025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7460319379824060909}
   - component: {fileID: 4430906762928367115}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5069,7 +5069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8066752471436520452}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Level Gen 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

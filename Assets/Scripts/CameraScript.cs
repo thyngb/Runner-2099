@@ -2,48 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraScript : MonoBehaviour
+public class cameraScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public int camSizeHorizontal;
-
-    public float startMoveSpeed;
-    public float maxMoveSpeed;
-
-    private float currentMoveSpeed;
-
-    private float Delay = 3;
+    [SerializeField] public int camSizeHorizontal;
+    [SerializeField] private float cameraOffsetAtX, cameraOffsetAtY;
+    [SerializeField] private Transform playerPosition;
+    [SerializeField] Collider2D colider;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        currentMoveSpeed = startMoveSpeed;
-
-    }
 
     // Update is called once per frame
+
+    void Start()
+    {
+        camSizeHorizontal = (int)colider.bounds.size.x;
+    }
     void Update()
     {
-
-        
         transform.position = new Vector3(
-                transform.position.x + (currentMoveSpeed * Time.deltaTime),
-                transform.position.y,
-                transform.position.z
-            );
+            playerPosition.position.x + cameraOffsetAtX,
+            transform.position.y,
+            transform.position.z
+        );
     }
-
     public void SetPosition(Vector2 newPos)
     {
         transform.position = new Vector3(
-                newPos.x,
-                newPos.y,
-                transform.position.z
-            );
-    }
-
-    public float getCamCurrSpeed()
-    {
-        return this.currentMoveSpeed;
+            newPos.x,
+            newPos.y,
+            transform.position.z
+        );
     }
 }

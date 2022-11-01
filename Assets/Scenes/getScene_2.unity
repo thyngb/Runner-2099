@@ -272,6 +272,9 @@ MonoBehaviour:
   - levelObject: {fileID: 5070430267793366006, guid: 7bca5dd83fa61434cbb8cb002e704b91, type: 3}
     horizontalSize: 20
     yLevelSpawn: 0
+  - levelObject: {fileID: 5070430267793366006, guid: 3a8eb173d35f10c449e7cb9013511c7b, type: 3}
+    horizontalSize: 20
+    yLevelSpawn: 0
 --- !u!1001 &644677638
 PrefabInstance:
   m_ObjectHideFlags: 0

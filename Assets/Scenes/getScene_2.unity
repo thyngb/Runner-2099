@@ -265,18 +265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0b142898c86b143b92df201e548da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WindowSize: 0
+  WindowSize: 57
   cameraScript: {fileID: 120606729}
-  generationOffsetX: 0
+  generationOffsetX: -8
   levels:
-  - levelObject: {fileID: 0}
-    horizontalSize: 19
-    yLevelSpawn: 0
-  - levelObject: {fileID: 0}
-    horizontalSize: 0
-    yLevelSpawn: 0
-  - levelObject: {fileID: 0}
-    horizontalSize: 0
+  - levelObject: {fileID: 5070430267793366006, guid: 7bca5dd83fa61434cbb8cb002e704b91, type: 3}
+    horizontalSize: 20
     yLevelSpawn: 0
 --- !u!1001 &644677638
 PrefabInstance:
@@ -285,13 +279,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2640593957781034160, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 284962229, guid: 98ded3dbc4bb33c418ea85a0b751fbee, type: 3}
     - target: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.552398
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
       propertyPath: m_LocalPosition.y
@@ -337,7 +343,12 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1229069591}
-    m_RemovedComponents: []
+    - target: {fileID: 2640593957781034174, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
+      propertyPath: speed
+      value: 0.01
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2640593957781034175, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
 --- !u!1 &667298925
 GameObject:
@@ -779,11 +790,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644943294}
   m_CullTransparentMesh: 1
+--- !u!1 &1656156577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2640593957781034164, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
+  m_PrefabInstance: {fileID: 644677638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1711375848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2640593957781034161, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
   m_PrefabInstance: {fileID: 644677638}
   m_PrefabAsset: {fileID: 0}
+--- !u!111 &1711375854
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656156577}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8433f7b0738c4984da4935687d62878c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8433f7b0738c4984da4935687d62878c, type: 2}
+  - {fileID: 7400000, guid: 35ad3e77c459ef54b8266b628cdb9814, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &1711375855
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656156577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3c75eb2803741d45b67cba1009cd490, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1717434946
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1717434947
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformGenerator : MonoBehaviour
+public class levelGenerator : MonoBehaviour
 {
     [Header("Camera")]
     public int WindowSize;
@@ -41,7 +41,6 @@ public class PlatformGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         startCameraPos = cameraScript.gameObject.transform.position;
         currentCameraPos = startCameraPos;
 

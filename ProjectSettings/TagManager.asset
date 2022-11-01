@@ -40,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tilemaps - Midground
+    uniqueID: 2954102679
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI Assets
+    uniqueID: 2200396047
     locked: 0

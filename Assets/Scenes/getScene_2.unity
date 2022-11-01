@@ -290,6 +290,9 @@ MonoBehaviour:
   - levelObject: {fileID: 5070430267793366006, guid: 3a8eb173d35f10c449e7cb9013511c7b, type: 3}
     horizontalSize: 20
     yLevelSpawn: 0
+  - levelObject: {fileID: 5070430267793366006, guid: 06a91287e30f9e94c83d94a01081a0d4, type: 3}
+    horizontalSize: 20
+    yLevelSpawn: 0
 --- !u!4 &267021723
 Transform:
   m_ObjectHideFlags: 0

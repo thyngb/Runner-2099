@@ -374,11 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a146399840e1f3b4e9b21ab3220fbae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {x: 2.6700003, y: -1.33}
-  speed: 0.01
-  option_physics: 0
-  option_momentum: 0
-  option_animation: 1
 --- !u!50 &297258093
 Rigidbody2D:
   serializedVersion: 4
@@ -714,13 +709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5670843c27ac0f143a0d1c75161708c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1954395833}
-  bulletPrefab: {fileID: 2068144829}
---- !u!1 &2068144829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5319145797427139358, guid: e2a4da821810897499737d1e80df4622, type: 3}
-  m_PrefabInstance: {fileID: 108681572}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2640593958182093878
 PrefabInstance:
   m_ObjectHideFlags: 0

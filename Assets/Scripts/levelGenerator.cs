@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformGenerator : MonoBehaviour
+public class levelGenerator : MonoBehaviour
 {
     [Header("Camera")]
     public int WindowSize;

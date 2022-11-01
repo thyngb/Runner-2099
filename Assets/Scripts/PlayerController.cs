@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
         print(isGrounded);
         
         anim.SetBool("", true);
-        isGrounded = Physics2D.OverlapCircle(feet.position, 0.5f, groundings);
+        isGrounded = Physics2D.OverlapCircle(feet.position, 0.01f, groundings);
         
         //for jumping
         if ((isGrounded == true && (Input.GetAxisRaw("Vertical") == 1)))
@@ -103,6 +103,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name.Contains("Camera"))

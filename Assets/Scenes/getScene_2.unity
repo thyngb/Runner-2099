@@ -281,7 +281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0b142898c86b143b92df201e548da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WindowSize: 1000
   cameraScript: {fileID: 120606729}
   generationOffsetX: -8
   levels:
@@ -383,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 1229069591}
     - target: {fileID: 2640593957781034174, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
       propertyPath: speed
-      value: 0.01
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 2640593957781034174, guid: ac881e3dfb6ac0f4282ed5547c6c1052, type: 3}
       propertyPath: jumpforce

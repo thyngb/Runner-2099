@@ -5,7 +5,6 @@ using UnityEngine;
 public class levelGenerator : MonoBehaviour
 {
     [Header("Camera")]
-    public int WindowSize;
     public cameraScript cameraScript;
 
     private Vector2 startCameraPos;
@@ -37,7 +36,6 @@ public class levelGenerator : MonoBehaviour
     private Queue<PreGeneratedLevel> levelQueue;
     private float slidingWindowMoveDiff;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +53,7 @@ public class levelGenerator : MonoBehaviour
         currentCameraPos = cameraScript.gameObject.transform.position;
 
         #region Sliding Window
-        if (WindowSize - currentCameraPos.x <= 0)
+        if (currentCameraPos.x <= 0)
         {
             slidingWindowMoveDiff = currentCameraPos.x - startCameraPos.x;
 

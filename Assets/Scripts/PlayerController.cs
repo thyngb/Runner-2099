@@ -75,7 +75,11 @@ public class PlayerController : MonoBehaviour
 
     private void getInputMovement()
     {
+        print(isGrounded);
+        
+        anim.SetBool("", true);
         isGrounded = Physics2D.OverlapCircle(feet.position, 0.5f, groundings);
+        
         //for jumping
         if ((isGrounded == true && (Input.GetAxisRaw("Vertical") == 1)))
         {
